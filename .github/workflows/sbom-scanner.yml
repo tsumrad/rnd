@@ -14,7 +14,7 @@ jobs:
       source_path: .
       enable_filesystem_scan: true
       syft_version: v1.20.0
-      upload_artifacts: false
+      upload_artifacts: true
       artifact_prefix: sbom
       artifact_retention_days: 3
     secrets:
