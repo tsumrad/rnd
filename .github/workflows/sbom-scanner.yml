@@ -1,0 +1,19 @@
+name: SBOM Scanner
+
+"on":
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  generate-sbom:
+    uses: tsumrad/gh-tools/.github/workflows/sbom-generation.yml@main
+    with:
+      source_path: .
+      enable_filesystem_scan: true
+      syft_version: v1.20.0
+      upload_artifacts: false
+      artifact_prefix: sbom
+      artifact_retention_days: 3
