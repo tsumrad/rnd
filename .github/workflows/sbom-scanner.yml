@@ -18,4 +18,4 @@ jobs:
       artifact_prefix: sbom
       artifact_retention_days: 3
     secrets:
-      personal_access_token: ${{ secrets.GHA_TOKEN }}
+      PAT: ${{ secrets.GHA_TOKEN }}
