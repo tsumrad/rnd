@@ -9,6 +9,7 @@ from app.db.session import get_db
 from app.models.category import Category
 from app.models.product import Product
 from app.schemas.dashboard import DashboardStats
+from starlette import status
 
 router = APIRouter(dependencies=[Depends(get_current_user)])
 
@@ -20,7 +21,7 @@ def get_stats(db: Annotated[Session, Depends(get_db)]) -> DashboardStats:
     total_quantity = db.query(func.coalesce(func.sum(Product.quantity), 0)).scalar() or 0
     low_stock_count = db.query(func.count(Product.id)).filter(Product.quantity <= 5).scalar() or 0
     inventory_value = db.query(func.coalesce(func.sum(Product.quantity * Product.price), 0)).scalar() or 0
-
+    print(status.HTTP_404_NOT_FOUND)
     return DashboardStats(
         product_count=product_count,
         category_count=category_count,
