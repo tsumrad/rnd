@@ -7,6 +7,10 @@ name: SBOM Scanner
       - main
   pull_request:
 
+permissions:
+   contents: read
+   security-events: write
+   
 jobs:
   generate-sbom:
     uses: tsumrad/gh-tools/.github/workflows/sbom-generation.yml@main
