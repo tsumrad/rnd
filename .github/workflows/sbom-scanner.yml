@@ -22,4 +22,4 @@ jobs:
       artifact_prefix: sbom
       artifact_retention_days: 3
     secrets:
-      PAT: ${{ secrets.GHA_TOKEN_NEW }}
+      PAT: ${{ secrets.GHA_TOKEN }}
