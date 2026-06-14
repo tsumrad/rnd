@@ -10,6 +10,7 @@ name: SBOM Scanner
 permissions:
    contents: write
    security-events: write
+   pull-requests: write
    
 jobs:
   generate-sbom:
