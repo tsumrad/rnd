@@ -14,7 +14,7 @@ permissions:
    
 jobs:
   generate-sbom:
-    uses: tsumrad/gh-tools/.github/workflows/sbom-generation.yml@feature/sbom-vulnerability-capture
+    uses: tsumrad/gh-tools/.github/workflows/sbom-vulnerability-management.yml@feature/sbom-vulnerability-capture
     with:
       source_path: .
       enable_filesystem_scan: true
