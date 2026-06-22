@@ -11,7 +11,7 @@ on:
 
 permissions:
   contents: read
-  issues: read
+  issues: write
   pull-requests: read
 
 network: defaults
@@ -29,7 +29,6 @@ safe-outputs:
   allowed-github-references: []
   create-issue:
     title-prefix: "[repo-status] "
-    labels: [report, daily-status]
     close-older-issues: true
 source: githubnext/agentics/workflows/repo-status.md@d63b34de41bc0dc052096e094c732cf28eafc659
 ---
