@@ -1,4 +1,4 @@
-name: Security Vulnerability Rollup
+name: Security Rollup
 
 on:
   workflow_dispatch:
