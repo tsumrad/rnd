@@ -14,5 +14,6 @@ jobs:
       pull-requests: write
       issues: write
       security-events: write
+      vulnerability-alerts: read
     with:
       severities: 'critical,high'
