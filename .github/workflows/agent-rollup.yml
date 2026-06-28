@@ -21,7 +21,7 @@ on:
 
 jobs:
   invoke-security-remediation:
-    uses: tsumrad/octo-gha-tools/.github/workflows/security-vulnerability-remediation.yml@agent-remediation
+    uses: tsumrad/octo-gha-tools/.github/workflows/security-vulnerability-remediation.yml@18097f674b779c4707b75149e0e648082785ee6d # agent-remediation
     permissions:
       contents: write
       pull-requests: write
