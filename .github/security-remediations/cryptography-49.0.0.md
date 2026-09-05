@@ -1,12 +1,12 @@
 # Security Remediation Required
 
 **Package**: `cryptography`
-**Advisory**: GHSA-m2h6-j472-rp4c
+**Advisory**: GHSA-jwv3-5hgf-82ww
 **Severity**: High
 **Fix version**: `49.0.0`
 
 ## Summary
-python-cryptography verifier accepts wildcard DNS names allowing escape from permittedSubtrees
+python-cryptography: Duplicate self-signed intermediates can cause exponential path-building
 
 ## Action Required
 Upgrade `cryptography` to version `49.0.0` or later to resolve this vulnerability.
