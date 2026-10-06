@@ -1,12 +1,12 @@
 # Security Remediation Required
 
 **Package**: `axios`
-**Advisory**: GHSA-c29m-xwm3-cm6r
+**Advisory**: GHSA-44g4-m2mj-wpvx
 **Severity**: High
 **Fix version**: `1.20.0`
 
 ## Summary
-Axios: ReDoS in fromDataURI data: URL parser freezes the Node event loop (DoS)
+Axios: CIDR-form NO_PROXY entries are ignored, causing proxy exclusion bypass for internal IP ranges
 
 ## Action Required
 Upgrade `axios` to version `1.20.0` or later to resolve this vulnerability.
