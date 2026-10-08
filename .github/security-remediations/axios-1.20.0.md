@@ -1,12 +1,12 @@
 # Security Remediation Required
 
 **Package**: `axios`
-**Advisory**: GHSA-44g4-m2mj-wpvx
+**Advisory**: GHSA-4hqw-qxg8-jxx2
 **Severity**: High
 **Fix version**: `1.20.0`
 
 ## Summary
-Axios: CIDR-form NO_PROXY entries are ignored, causing proxy exclusion bypass for internal IP ranges
+Axios: Fetch Adapter Header Injection via Inherited FormData getHeaders
 
 ## Action Required
 Upgrade `axios` to version `1.20.0` or later to resolve this vulnerability.
