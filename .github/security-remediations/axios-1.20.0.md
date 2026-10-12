@@ -1,12 +1,12 @@
 # Security Remediation Required
 
 **Package**: `axios`
-**Advisory**: GHSA-4hqw-qxg8-jxx2
+**Advisory**: GHSA-j8rh-479h-cp32
 **Severity**: High
 **Fix version**: `1.20.0`
 
 ## Summary
-Axios: Fetch Adapter Header Injection via Inherited FormData getHeaders
+Axios: Header Injection via Inherited headers After Minimal Interceptor
 
 ## Action Required
 Upgrade `axios` to version `1.20.0` or later to resolve this vulnerability.
